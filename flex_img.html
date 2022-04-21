@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex_img</title>
+    <style>
+        *{ margin: 0; padding: 0;}
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        section{
+            display: flex;
+            /* 기본적으로 한줄에 꽉채움 */
+            flex-wrap: wrap;
+        /* 줄바꾸기  속성 - 나머지 공간 여백을 만들어버림 */
+        }
+        section div{
+            /* width: 300px;
+            300기준 grow: 1; 때문에 늘어남 */
+            flex-grow: 1;
+            /* 나머지 화면에 꽉채워라 */
+            flex-basis: 300px;
+            /* 기준값은 이걸로 정해줌
+            여백은 grow에 의해 화면 꽉차게  반응형헤서이미지 처리 방법 */
+            margin: 5px;
+        }
+        
+
+/* 카드는 안드로이드스타일
+프로필 이미지마 ㄴ잘라서 엑스버트 ㄴ누르렴ㄴ 닫ㄹ리게
+내일까지 아님 총 3개 금요일 까지 제출 */
+
+    </style>
+</head>
+<body>
+    <section>
+        <div><img src="flex_img/flex_01.jpg" alt=""></div>
+        <div><img src="flex_img/flex_02.jpg" alt=""></div>
+        <div><img src="flex_img/flex_03.jpg" alt=""></div>
+        <div><img src="flex_img/flex_04.jpg" alt=""></div>
+        <div><img src="flex_img/flex_05.jpg" alt=""></div>
+        <div><img src="flex_img/flex_06.jpg" alt=""></div>
+        <div><img src="flex_img/flex_07.jpg" alt=""></div>
+        <div><img src="flex_img/flex_08.jpg" alt=""></div>
+        <div><img src="flex_img/flex_09.jpg" alt=""></div>
+    </section>
+    
+
+
+
+
+
+
+</body>
+</html>
